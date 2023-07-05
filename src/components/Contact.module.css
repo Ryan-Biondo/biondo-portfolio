@@ -1,0 +1,35 @@
+.contact {
+    padding-bottom: 5em;
+}
+.contactFormBox {
+    width: 90%;
+    height: 60%;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: space-between;
+    margin: 0 4em;
+    height: 100%;
+    padding: 1em 0;
+}
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+}
+textarea {
+    height: 10em;
+}
+button {
+    margin: 0;
+    align-self: self-end;
+}

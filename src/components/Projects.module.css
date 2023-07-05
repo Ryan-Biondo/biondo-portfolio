@@ -1,0 +1,15 @@
+.projects {
+    height: 700px;
+}
+.projectsSection {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.projectText {
+    margin: 2em 2em 0 0;
+}
+p {
+    width: 400px;
+    margin: 0;
+}
