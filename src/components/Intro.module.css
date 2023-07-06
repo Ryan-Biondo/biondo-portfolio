@@ -7,7 +7,7 @@
     height: 100vh;
     background-color: var(--quinary-color);
     background-image: url("/src/images/backgroundportfolio.png");
-    background-position: 0 80px;
+    background-position: 0 30px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -47,6 +47,7 @@ h1 {
         transform: translateY(0);
     }
 }
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5em;
