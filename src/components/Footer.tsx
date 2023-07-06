@@ -8,8 +8,8 @@ const Footer = () => {
         <div className={styles.footerDescription}>
           <h3>Ryan Biondo</h3>
           <p>
-            I am a web developer based in Colorado. I enjoy working in React and
-            TypeScript. Currently available for hire.
+            Front End Developer. React & TypeScript. Currently available for
+            hire.
           </p>
         </div>
 
