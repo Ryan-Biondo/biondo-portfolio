@@ -1,4 +1,5 @@
 import styles from './Projects.module.css';
+import physciraImage from '/src/images/physcirascreenshot.png';
 
 const Projects = () => {
   return (
@@ -10,12 +11,12 @@ const Projects = () => {
           href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
           <img
             className={styles.projectImage}
-            src="./src/images/physcirascreenshot.png"
+            src={physciraImage}
             alt="Physcira Screenshot"
           />
         </a>
         <div className={styles.projectText}>
-          <p>
+          <p className={styles.projectDescript}>
             The Brand Guide Navigation project is a web application that
             provides a user-friendly interface for navigating through a brand
             guide. The purpose of this project is to showcase a brand's

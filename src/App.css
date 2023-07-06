@@ -1,39 +1,19 @@
 :root {
-    /* --primary-color: rgb(131, 197, 255);
-    --secondary-color: rgb(131, 131, 255);
-    --tertiary-color: #8f9ee9;
-    --quaternary-color: #aeb5db;
-    --quinary-color: #e9e9e9; */
-
-    /* --primary-color: #202526;
-    --secondary-color: #455055;
-    --tertiary-color: #54a3ab;
-    --quaternary-color: #a2a4a7;
-    --quinary-color: #d4dce3; */
-
     --primary-color: #464444;
     --primary-color-dark: #3d3b3b;
-    --primary-text-color: #252424;
+    --primary-text-color: #272525;
     --secondary-text-color: #fcfcfc;
     --secondary-color: #ff5f03;
     --tertiary-color: #c8ac3b;
     --quaternary-color: #24f1ff;
     --quinary-color: #f4f5f5;
     --tertiary-color-dark: #b99f37;
-
-    /* --primary-color: #2f5aa4;
-    --primary-text-color: #252424;
-    --primary-color-dark: #1c3a6b;
-    --secondary-color: #5a6c66;
-    --tertiary-color: #0065ff;
-    --quaternary-color: #50bc7d;
-    --quinary-color: #eeeeee;
-    --tertiary-color-dark: #0055d4; */
 }
+
 html,
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
     color: var(--primary-text-color);
 }
@@ -62,12 +42,22 @@ h2 {
     color: var(--secondary-text-color);
     font-size: 1.2em;
     font-weight: bold;
+    font-family: inherit;
     cursor: pointer;
     box-shadow: 5px 5px 2px var(--primary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .button:hover {
     box-shadow: 3px 3px 2px var(--primary-color-dark);
     transform: translate(2px, 2px);
     transition: 0.4s;
+}
+
+@media screen and (max-width: 399px) {
+    body p {
+        font-size: 01em;
+    }
 }

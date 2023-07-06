@@ -1,15 +1,39 @@
-.projects {
-    height: 700px;
-}
 .projectsSection {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
 }
 .projectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2em 2em 0 0;
 }
-p {
+.projectImage {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+.projectDescript {
     width: 400px;
     margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .projectsSection {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .projectDescript {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 399px) {
+    .projectImage {
+        width: 300px;
+        height: 300px;
+    }
 }

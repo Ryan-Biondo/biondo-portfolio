@@ -2,15 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
     min-height: 450px;
     height: 100vh;
     background-color: var(--quinary-color);
+    background-image: url("/src/images/backgroundportfolio.png");
+    background-position: 0 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 h1 {
     font-size: 4em;
     margin-bottom: 0.5em;
+    margin-top: 300px;
+    text-transform: uppercase;
 }
 .downloadResume {
     text-align: center;
@@ -18,7 +23,7 @@ h1 {
 .jobTitle {
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 .scrollArrow {
@@ -30,6 +35,7 @@ h1 {
     font-size: 2em;
     animation: scroll 2s ease-in-out infinite;
 }
+
 @keyframes scroll {
     0% {
         transform: translateY(0);
@@ -39,5 +45,10 @@ h1 {
     }
     100% {
         transform: translateY(0);
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
     }
 }
