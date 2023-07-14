@@ -1,6 +1,7 @@
 # **Ryan Biondo's Portfolio**
 
 My personal portfolio showcasing my projects and skills as a web developer.
+You can view the live version of my portfolio [here](ryanbiondo.com).
 
 ## **Project Overview**
 
@@ -8,7 +9,7 @@ This portfolio is a React-based single-page web application. It displays my work
 
 ## **Demo**
 
-You can view the live version of my portfolio [here](ryanbiondo.com).
+<img src="demo.gif" width="800" />
 
 ## **Technologies Used**
 
