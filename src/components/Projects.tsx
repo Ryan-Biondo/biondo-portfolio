@@ -30,7 +30,7 @@ const Projects = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
+              href="https://github.com/Ryan-Biondo/The-Code-Quiz-Client">
               <button className="button">Project Link</button>
             </a>
           </div>
