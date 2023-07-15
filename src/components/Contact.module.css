@@ -1,6 +1,6 @@
 .contact {
-    padding-top: 100px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 450px;
     background-color: var(--quinary-color);
     background-image: url("/src/images/backgroundportfolioalter.png");
     background-position: center 80px;
@@ -45,6 +45,10 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+    .contact {
+        padding-top: 100px;
+        padding-bottom: 250px;
+    }
     .contactFormBox {
         width: 90%;
     }
