@@ -20,7 +20,7 @@ const Projects = () => {
           </a>
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
-              <strong></strong>The Code Quiz client is a dynamic web application
+              <strong>The Code Quiz</strong> client is a dynamic web application
               designed to connect with the Code Quiz server and retrieve a
               random assortment of questions from a diverse pool of quizzes.
               This project was built using React and TypeScript. It provides an
@@ -31,7 +31,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/Ryan-Biondo/The-Code-Quiz-Client">
-              <button className="button">Project Link</button>
+              <button className="button">GitHub Link</button>
             </a>
           </div>
         </div>
@@ -49,18 +49,18 @@ const Projects = () => {
           </a>
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
-              The Brand Guide Navigation project is a web application that
-              showcases a brand's positioning, logo and identity assets, and
-              touchpoints and brand assets. It serves as a centralized hub for
-              accessing and exploring various elements of a brand's guidelines.
-              The project utilizes HTML, CSS, and JavaScript to create a
-              responsive and interactive user interface.
+              <strong>The Brand Guide Navigation</strong> project is a web
+              application that showcases a brand's positioning, logo and
+              identity assets, and touchpoints and brand assets. It serves as a
+              centralized hub for accessing and exploring various elements of a
+              brand's guidelines. The project utilizes HTML, CSS, and JavaScript
+              to create a responsive and interactive user interface.
             </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
-              <button className="button">Project Link</button>
+              <button className="button">GitHub Link</button>
             </a>
           </div>
         </div>
