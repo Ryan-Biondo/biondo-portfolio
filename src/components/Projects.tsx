@@ -5,8 +5,8 @@ import codeQuizImage from '/src/images/codequizscreenshot.png';
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects + ' ' + 'main'}>
-      <h2>Projects</h2>
       <div className={styles.projectsSection}>
+        <h2>Projects</h2>
         <div className={styles.projectBox}>
           <a
             target="_blank"

@@ -1,20 +1,36 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { BiMenu, BiX } from 'react-icons/bi';
 import styles from './NavBar.module.css';
 import profilepic from '/src/images/profilepic.jpg';
+declare module 'react-scroll';
 
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-    if (window.innerWidth > 768) {
-      setNavOpen(false);
-    }
-  };
+  const [activeLink] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth > 768) {
+        setNavOpen(false);
+      }
+    };
+
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -27,42 +43,87 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={isScrolled ? styles.navVisible : ''}>
       <div className={styles.navTitle}>
-        <a href="#intro">
+        <Link
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          onClick={navOpen ? toggleNav : () => null}>
           <img className={styles.navPic} src={profilepic} alt="Ryan" />
-        </a>
-        <a href="#intro">
+        </Link>
+        <Link
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          onClick={navOpen ? toggleNav : () => null}>
           <div className={styles.navName}>Ryan Biondo</div>
-        </a>
+        </Link>
       </div>
 
-      {isMobile &&
-        (navOpen ? (
-          <BiX
-            className={`${styles.menuIcon} ${styles.open}`}
-            onClick={toggleNav}
-          />
-        ) : (
-          <BiMenu className={styles.menuIcon} onClick={toggleNav} />
-        ))}
+      {navOpen ? (
+        <BiX className={styles.menuIcon} onClick={toggleNav} />
+      ) : (
+        <BiMenu className={styles.menuIcon} onClick={toggleNav} />
+      )}
 
-      <ul
-        className={
-          navOpen ? `${styles.navLinksActive} ${styles.open}` : styles.navLinks
-        }>
-        <a href="#intro">
-          <li className={styles.navItem}>Home</li>
-        </a>
-        <a href="#about">
-          <li className={styles.navItem}>About</li>
-        </a>
-        <a href="#projects">
-          <li className={styles.navItem}>Projects</li>
-        </a>
-        <a href="#contact">
-          <li className={styles.navItem}>Contact</li>
-        </a>
+      <ul className={navOpen ? styles.navLinksActive : styles.navLinks}>
+        <Link
+          activeClass={windowWidth > 768 ? styles.navItemActive : ''}
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          className={
+            activeLink === 'intro' ? styles.navItemActive : styles.navItem
+          }
+          onClick={navOpen ? toggleNav : () => null}>
+          <li>Home</li>
+        </Link>
+        <Link
+          activeClass={windowWidth > 768 ? styles.navItemActive : ''}
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          className={
+            activeLink === 'about' ? styles.navItemActive : styles.navItem
+          }
+          onClick={navOpen ? toggleNav : () => null}>
+          <li>About</li>
+        </Link>
+        <Link
+          activeClass={windowWidth > 768 ? styles.navItemActive : ''}
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          className={
+            activeLink === 'projects' ? styles.navItemActive : styles.navItem
+          }
+          onClick={navOpen ? toggleNav : () => null}>
+          <li>Projects</li>
+        </Link>
+        <Link
+          activeClass={windowWidth > 768 ? styles.navItemActive : ''}
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={300}
+          className={
+            activeLink === 'contact' ? styles.navItemActive : styles.navItem
+          }
+          onClick={navOpen ? toggleNav : () => null}>
+          <li>Contact</li>
+        </Link>
       </ul>
     </nav>
   );

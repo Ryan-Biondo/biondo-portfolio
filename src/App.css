@@ -3,11 +3,11 @@
     --primary-color-dark: #3d3b3b;
     --primary-text-color: #272525;
     --secondary-text-color: #fcfcfc;
-    --secondary-color: #ff5f03;
-    --tertiary-color: #c8ac3b;
-    --quaternary-color: #24f1ff;
+    --secondary-color: #eb7900;
     --quinary-color: #f4f5f5;
-    --tertiary-color-dark: #b99f37;
+    --tertiary-color: #9596bd;
+    /* --quaternary-color-dark: #00adb3; */
+    /* --quaternary-color: #24f1ff; */
 }
 
 html,
