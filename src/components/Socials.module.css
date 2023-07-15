@@ -1,6 +1,6 @@
 .socials {
     position: absolute;
-    top: 500px;
+    bottom: 50px;
     padding: 5px;
     font-size: 2em;
     display: flex;
@@ -19,4 +19,15 @@
 }
 .socialLink:hover {
     background-color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .socials {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 399px) {
+    .socials {
+        display: none;
+    }
 }

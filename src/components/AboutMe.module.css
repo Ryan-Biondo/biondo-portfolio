@@ -1,5 +1,5 @@
-.aboutMe {
-    padding-top: 60px;
+h3 {
+    margin: 10px 0;
 }
 .aboutMeSection {
     display: flex;
@@ -9,6 +9,7 @@
 p {
     font-size: 1.2em;
     width: 300px;
+    text-align: center;
 }
 .aboutMeContact {
     display: flex;
@@ -20,7 +21,7 @@ p {
     flex-wrap: wrap;
     width: 250px;
     list-style-type: none;
-    padding: 0;
+    padding: 25px 0;
     margin: 0;
 }
 .skillsListItem {
@@ -30,6 +31,7 @@ p {
     padding: 15px;
     border-radius: 5px;
     font-size: 1.1em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 992px) {
@@ -42,6 +44,25 @@ p {
     .skillsList {
         width: 100%;
         justify-content: center;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 399px) {
+    p {
+        width: 100%;
+    }
+    .skillsListItem {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .skillsList {
+        margin-bottom: 0.5em;
+    }
+    .aboutMeContact {
+        width: 100%;
+        margin: 10px 0;
     }
 }

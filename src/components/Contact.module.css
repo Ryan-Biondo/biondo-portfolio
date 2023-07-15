@@ -1,8 +1,9 @@
 .contact {
+    padding-top: 100px;
     padding-bottom: 6em;
     background-color: var(--quinary-color);
     background-image: url("/src/images/backgroundportfolioalter.png");
-    background-position: top center;
+    background-position: center 80px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -11,6 +12,7 @@
     height: 60%;
     background-color: var(--tertiary-color);
     border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 .contactForm {
     display: flex;
@@ -38,9 +40,20 @@ textarea {
 button {
     align-self: self-end;
 }
+textarea {
+    resize: none;
+}
 
 @media screen and (max-width: 768px) {
     .contactFormBox {
         width: 90%;
+    }
+    button {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 460px) {
+    .contact {
+        background-position: center 150px;
     }
 }

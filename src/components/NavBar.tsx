@@ -5,25 +5,29 @@ import profilepic from '/src/images/profilepic.jpg';
 
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setNavOpen(false);
-      }
-    };
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+    if (window.innerWidth > 768) {
+      setNavOpen(false);
+    }
+  };
+
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
 
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <div className={styles.navTitle}>
         <a href="#intro">
           <img className={styles.navPic} src={profilepic} alt="Ryan" />
@@ -33,13 +37,20 @@ const NavBar = () => {
         </a>
       </div>
 
-      {navOpen ? (
-        <BiX className={styles.menuIcon} onClick={toggleNav} />
-      ) : (
-        <BiMenu className={styles.menuIcon} onClick={toggleNav} />
-      )}
+      {isMobile &&
+        (navOpen ? (
+          <BiX
+            className={`${styles.menuIcon} ${styles.open}`}
+            onClick={toggleNav}
+          />
+        ) : (
+          <BiMenu className={styles.menuIcon} onClick={toggleNav} />
+        ))}
 
-      <ul className={navOpen ? styles.navLinksActive : styles.navLinks}>
+      <ul
+        className={
+          navOpen ? `${styles.navLinksActive} ${styles.open}` : styles.navLinks
+        }>
         <a href="#intro">
           <li className={styles.navItem}>Home</li>
         </a>
