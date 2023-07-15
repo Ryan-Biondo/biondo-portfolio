@@ -7,18 +7,21 @@ const Socials = () => {
       <a
         className={styles.socialLink}
         target="_blank"
+        rel="noopener noreferrer"
         href="https://www.linkedin.com/in/ryan-biondo/">
         <FaLinkedin color="var(--quinary-color)" />
       </a>
       <a
         className={styles.socialLink}
         target="_blank"
+        rel="noopener noreferrer"
         href="https://github.com/Ryan-Biondo/">
         <FaGithub color="var(--quinary-color)" />
       </a>
       <a
         className={styles.socialLink}
         target="_blank"
+        rel="noopener noreferrer"
         href="https://twitter.com/RyanBiondo/">
         <FaTwitter color="var(--quinary-color)" />
       </a>

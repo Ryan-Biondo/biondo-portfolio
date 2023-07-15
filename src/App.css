@@ -3,16 +3,17 @@
     --primary-color-dark: #3d3b3b;
     --primary-text-color: #272525;
     --secondary-text-color: #fcfcfc;
-    --secondary-color: #ff5f03;
-    --tertiary-color: #c8ac3b;
-    --quaternary-color: #24f1ff;
+    --secondary-color: #eb7900;
     --quinary-color: #f4f5f5;
-    --tertiary-color-dark: #b99f37;
+    --tertiary-color: #9596bd;
+    /* --quaternary-color-dark: #00adb3; */
+    /* --quaternary-color: #24f1ff; */
 }
 
 html,
 body {
     margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
     color: var(--primary-text-color);
@@ -24,7 +25,7 @@ a {
 }
 h2 {
     font-size: 2em;
-    margin: 3em 0 2em;
+    margin: 1em 0 1.5em;
 }
 .main {
     display: flex;
@@ -58,6 +59,14 @@ h2 {
 
 @media screen and (max-width: 399px) {
     body p {
-        font-size: 01em;
+        font-size: 1em;
+    }
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+    h2 {
+        font-size: 1.5em;
     }
 }

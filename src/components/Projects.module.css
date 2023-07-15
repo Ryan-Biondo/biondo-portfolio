@@ -1,13 +1,23 @@
 .projectsSection {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.projectBox {
+    display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    width: 90vw;
+}
+.projectBox:not(:last-child) {
+    margin-bottom: 5em;
 }
 .projectText {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em 2em 0 0;
+    margin: 1em;
 }
 .projectImage {
     width: 400px;
@@ -15,14 +25,16 @@
     border-radius: 10px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     object-fit: cover;
+    object-position: left;
+    margin: 1em;
 }
 .projectDescript {
-    width: 400px;
-    margin: 0;
+    margin: auto 0;
+    text-align: start;
 }
 
 @media screen and (max-width: 1200px) {
-    .projectsSection {
+    .projectBox {
         flex-direction: column;
         align-items: center;
         width: 80%;
@@ -31,9 +43,13 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 460px) {
     .projectImage {
-        width: 300px;
-        height: 300px;
+        width: 90vw;
+        height: 90vw;
+    }
+    .projectDescript {
+        font-size: 0.8em;
+        margin: 20px 0;
     }
 }
