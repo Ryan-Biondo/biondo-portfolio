@@ -27,12 +27,20 @@ const Projects = () => {
               interactive platform for developers to test their knowledge across
               a multitude of categories.
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Ryan-Biondo/The-Code-Quiz-Client">
-              <button className="button">GitHub Link</button>
-            </a>
+            <div className={styles.projectLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.thecodequiz.com/">
+                <button className="button">Demo</button>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Ryan-Biondo/The-Code-Quiz-Client">
+                <button className="button">GitHub Link</button>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -54,14 +62,23 @@ const Projects = () => {
               identity assets, and touchpoints and brand assets. It serves as a
               centralized hub for accessing and exploring various elements of a
               brand's guidelines. The project utilizes HTML, CSS, and JavaScript
-              to create a responsive and interactive user interface.
+              to create a responsive and interactive user interface. Designed by
+              Sean Craig Creative.
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
-              <button className="button">GitHub Link</button>
-            </a>
+            <div className={styles.projectLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://media.physcira.com">
+                <button className="button">Demo</button>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
+                <button className="button">GitHub Link</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
