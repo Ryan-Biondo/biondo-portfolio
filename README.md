@@ -63,7 +63,7 @@ biondo-portfolio
 │   │   ├── backgroundportfolioalter.png
 │   │   ├── physcirascreenshot.png
 │   │   ├── profilepic.jpg
-│   │   └── RyanBiondo-Resume.pdf
+│   │   └── Ryan-Biondo-Resume.pdf
 │   ├── index.css
 │   ├── main.tsx
 │   └── vite-env.d.ts

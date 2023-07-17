@@ -1,4 +1,4 @@
-import resume from '/Ryan-Biondo-Resume.pdf';
+import resume from '/src/assets/Ryan-Biondo-Resume.pdf';
 import styles from './Intro.module.css';
 import Socials from './Socials';
 import { FaDownload } from 'react-icons/fa';
