@@ -30,16 +30,7 @@ biondo-portfolio
 ├── .eslintrc.cjs
 ├── .gitignore
 ├── dist
-│   ├── assets
-│   │   ├── backgroundportfolio-984c1bd9.png
-│   │   ├── backgroundportfolioalter-ebd750d8.png
-│   │   ├── index-340008cc.css
-│   │   ├── index-715e7493.js
-│   │   ├── physcirascreenshot-4357df24.png
-│   │   ├── profilepic-b97d8946.jpg
-│   │   └── RyanBiondo-Resume-d3df2ced.pdf
-│   ├── index.html
-│   └── vite.svg
+│   ├── ...
 ├── index.html
 ├── LICENSE
 ├── package-lock.json
@@ -72,7 +63,7 @@ biondo-portfolio
 │   │   ├── backgroundportfolioalter.png
 │   │   ├── physcirascreenshot.png
 │   │   ├── profilepic.jpg
-│   │   └── RyanBiondo-Resume.pdf
+│   │   └── Ryan-Biondo-Resume.pdf
 │   ├── index.css
 │   ├── main.tsx
 │   └── vite-env.d.ts
