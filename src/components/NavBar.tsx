@@ -77,7 +77,7 @@ const NavBar = () => {
           to="intro"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-30}
           duration={300}
           className={
             activeLink === 'intro' ? styles.navItemActive : styles.navItem
@@ -90,7 +90,7 @@ const NavBar = () => {
           to="about"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-30}
           duration={300}
           className={
             activeLink === 'about' ? styles.navItemActive : styles.navItem
@@ -103,7 +103,7 @@ const NavBar = () => {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-30}
           duration={300}
           className={
             activeLink === 'projects' ? styles.navItemActive : styles.navItem
@@ -116,7 +116,7 @@ const NavBar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-30}
           duration={300}
           className={
             activeLink === 'contact' ? styles.navItemActive : styles.navItem
