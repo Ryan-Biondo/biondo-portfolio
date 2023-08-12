@@ -17,6 +17,9 @@ h1 {
     margin-top: 200px;
     text-transform: uppercase;
 }
+p {
+    width: 100%;
+}
 .downloadResume {
     text-align: center;
 }
@@ -46,19 +49,6 @@ h1 {
         top: 0;
     }
 }
-.slidingDiv {
-    animation: slideIn 0.5s ease-out forwards;
-    position: relative;
-    left: -100px; /* Adjust this as needed */
-    top: -100px; /* Adjust this as needed */
-}
-
-@keyframes slideIn {
-    100% {
-        left: 0;
-        top: 0;
-    }
-}
 
 .biondoColor {
     background: linear-gradient(90deg, #3498db, #8e44ad);
@@ -82,6 +72,35 @@ h1 {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+/* Intro.module.css */
+
+.loadingEllipsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 300px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3498db;
+    margin: 0 4px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 

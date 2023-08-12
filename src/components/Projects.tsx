@@ -1,12 +1,54 @@
 import styles from './Projects.module.css';
 import physciraImage from '/src/images/physcirascreenshot.png';
 import codeQuizImage from '/src/images/codequizscreenshot.png';
+import astropixImage from '/src/images/astropix-screenshot.jpg';
 
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects + ' ' + 'main'}>
       <div className={styles.projectsSection}>
         <h2>Projects</h2>
+
+        <div className={styles.projectBox}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Ryan-Biondo/APOD">
+            <img
+              className={styles.projectImage}
+              src={astropixImage}
+              alt="AstroPix Gallery Screenshot"
+            />
+          </a>
+          <div className={styles.projectText}>
+            <p className={styles.projectDescript}>
+              <strong>The AstroPix Gallery</strong> is a dynamic web application
+              that showcases the astronomy images sourced from NASA's Astronomy
+              Picture of the Day (APOD), built using React, Chakra UI, and React
+              Router. The calendar is imported from date-picker and sync the
+              date with the chosen picture. Utilized Chakra UI components for
+              styling and responsiveness, and generic custom hooks for modular
+              structure. The integration of real-time API data and interactive
+              features provides users with a platform to enjoy and learn about
+              astronomy.
+            </p>
+            <div className={styles.projectLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://apod.ryanbiondo.com/">
+                <button className="button">Demo</button>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Ryan-Biondo/APOD">
+                <button className="button">GitHub Link</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.projectBox}>
           <a
             target="_blank"
