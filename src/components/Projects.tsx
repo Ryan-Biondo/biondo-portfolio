@@ -22,15 +22,14 @@ const Projects = () => {
           </a>
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
-              <strong>The AstroPix Gallery</strong> is a dynamic web application
-              that showcases the astronomy images sourced from NASA's Astronomy
-              Picture of the Day (APOD), built using React, Chakra UI, and React
-              Router. The calendar is imported from date-picker and sync the
-              date with the chosen picture. Utilized Chakra UI components for
-              styling and responsiveness, and generic custom hooks for modular
-              structure. The integration of real-time API data and interactive
-              features provides users with a platform to enjoy and learn about
-              astronomy.
+              <strong>The AstroPix Gallery</strong> showcases space images
+              sourced from NASA's Astronomy Picture of the Day (APOD), built
+              using React, Chakra UI, and React Router. The calendar is imported
+              from date-picker and synchronizes the date with the chosen
+              picture. Utilized Chakra UI components for styling and
+              responsiveness, and generic custom hooks for modular structure.
+              The integration of real-time API data and interactive features
+              provides users with a platform to enjoy and learn about astronomy.
             </p>
             <div className={styles.projectLinks}>
               <a
