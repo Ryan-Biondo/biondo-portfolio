@@ -19,7 +19,7 @@ const AboutMe = () => {
 
         <div className={styles.aboutMeContact}>
           <h3>Reach out to me!</h3>
-          <p className={styles.p}>
+          <p className={styles.aboutDesc}>
             I am a self-taught web developer with a background in restaurant
             management. I am a web developer based in Colorado. I enjoy working
             in React and TypeScript. Currently available for hire.

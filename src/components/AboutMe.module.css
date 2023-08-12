@@ -10,10 +10,8 @@ h3 {
     justify-content: space-evenly;
     padding-bottom: 80px;
 }
-p {
-    font-size: 1.2em;
+.aboutDesc {
     width: 300px;
-    margin-left: 50px;
 }
 .aboutMeContact {
     display: flex;
@@ -60,7 +58,7 @@ p {
     }
 }
 @media screen and (max-width: 399px) {
-    p {
+    .aboutDesc {
         width: 100%;
     }
     .skillsListItem {

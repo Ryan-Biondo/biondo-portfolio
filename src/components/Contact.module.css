@@ -4,6 +4,7 @@
     background-position: center 80px;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 250px;
 }
 .contactFormBox {
     width: 60%;
@@ -41,17 +42,8 @@ button {
 textarea {
     resize: none;
 }
-@media screen and (max-width: 1200px) {
-    .contact {
-        padding-bottom: 250px;
-    }
-}
 
 @media screen and (max-width: 768px) {
-    .contact {
-        padding-top: 100px;
-        padding-bottom: 250px;
-    }
     .contactFormBox {
         width: 90%;
     }

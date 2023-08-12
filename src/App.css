@@ -18,7 +18,9 @@ body {
     scroll-behavior: smooth;
     color: var(--primary-text-color);
 }
-
+p {
+    font-size: 1.2em;
+}
 a {
     text-decoration: none;
     color: var(--secondary-text-color);
