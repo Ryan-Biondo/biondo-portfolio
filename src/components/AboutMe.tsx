@@ -2,7 +2,7 @@ import styles from './AboutMe.module.css';
 
 const AboutMe = () => {
   return (
-    <section id="about" className={styles.aboutMe + ' ' + 'main'}>
+    <section id="about" className="main">
       <h2 className={styles.h2}>About Me</h2>
       <div className={styles.aboutMeSection}>
         <div className={styles.skills}>
@@ -19,7 +19,7 @@ const AboutMe = () => {
 
         <div className={styles.aboutMeContact}>
           <h3>Reach out to me!</h3>
-          <p className={styles.p}>
+          <p className={styles.aboutDesc}>
             I am a self-taught web developer with a background in restaurant
             management. I am a web developer based in Colorado. I enjoy working
             in React and TypeScript. Currently available for hire.

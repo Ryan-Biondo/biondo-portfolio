@@ -6,10 +6,8 @@ const Footer = () => {
     <footer>
       <div className={styles.footerMain}>
         <div className={styles.footerDescription}>
-          <h3>Ryan Biondo</h3>
           <p className={styles.footerText}>
-            Front End Developer. React & TypeScript. Currently available for
-            hire.
+            Front End Developer. React & TypeScript. Open to new opportunities.
           </p>
         </div>
 

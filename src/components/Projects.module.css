@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
 .projectBox {
@@ -11,7 +11,7 @@
     width: 90vw;
 }
 .projectBox:not(:last-child) {
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 .projectText {
     display: flex;
@@ -47,11 +47,7 @@
     .projectDescript {
         width: 90vw;
     }
-    .projectLinks {
-        align-items: center;
-        width: 70vw;
-        flex-direction: column;
-    }
+
     .projectBox:not(:last-child) {
         margin-bottom: 150px;
     }
@@ -61,13 +57,19 @@
         width: 90vw;
     }
 }
+@media screen and (max-width: 500px) {
+    .projectLinks {
+        align-items: center;
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 460px) {
     .projectImage {
         width: 90vw;
         height: 90vw;
     }
     .projectDescript {
-        font-size: 0.8em;
+        font-size: 0.9em;
         margin: 20px 0;
     }
 }

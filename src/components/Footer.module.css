@@ -15,8 +15,9 @@ footer {
 }
 .footerText {
     font-size: 1.2em;
-    margin: 0;
+    margin: 40px auto 0;
     padding: 0;
+    width: 250px;
     text-align: start;
 }
 .footerDescription h3 {
@@ -27,6 +28,7 @@ footer {
 
 .footerSocials {
     display: flex;
+    margin-top: 40px;
     justify-content: space-around;
     color: var(--quinary-color);
     font-size: 2.5em;
@@ -69,10 +71,8 @@ footer {
         font-size: 0.9em;
         text-align: center;
     }
-}
-@media screen and (max-width: 399px) {
     .footerSocials {
-        margin-top: 0;
         width: 50%;
+        margin-top: 0;
     }
 }
