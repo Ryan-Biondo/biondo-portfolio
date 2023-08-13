@@ -10,16 +10,12 @@ const Projects = () => {
         <h2>Projects</h2>
 
         <div className={styles.projectBox}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Ryan-Biondo/APOD">
-            <img
-              className={styles.projectImage}
-              src={astropixImage}
-              alt="AstroPix Gallery Screenshot"
-            />
-          </a>
+          <img
+            className={styles.projectImage}
+            src={astropixImage}
+            alt="AstroPix Gallery Screenshot"
+          />
+
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
               <strong>The AstroPix Gallery</strong> showcases space images
@@ -49,16 +45,12 @@ const Projects = () => {
         </div>
 
         <div className={styles.projectBox}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Ryan-Biondo/The-Code-Quiz-Client">
-            <img
-              className={styles.projectImage}
-              src={codeQuizImage}
-              alt="The Code Quiz Screenshot"
-            />
-          </a>
+          <img
+            className={styles.projectImage}
+            src={codeQuizImage}
+            alt="The Code Quiz Screenshot"
+          />
+
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
               <strong>The Code Quiz</strong> client is a dynamic web application
@@ -86,16 +78,12 @@ const Projects = () => {
         </div>
 
         <div className={styles.projectBox}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Ryan-Biondo/scc-brand-dash-physcira">
-            <img
-              className={styles.projectImage}
-              src={physciraImage}
-              alt="Physcira Screenshot"
-            />
-          </a>
+          <img
+            className={styles.projectImage}
+            src={physciraImage}
+            alt="Physcira Screenshot"
+          />
+
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
               <strong>The Brand Guide Navigation</strong> project is a web
