@@ -51,7 +51,7 @@ p {
 }
 
 .biondoColor {
-    background: linear-gradient(90deg, #3498db, #8e44ad);
+    background: linear-gradient(90deg, var(--tertiary-color), #8e44ad);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -89,7 +89,7 @@ p {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: var(--tertiary-color);
     margin: 0 4px;
     animation: bounce 1s infinite;
 }
