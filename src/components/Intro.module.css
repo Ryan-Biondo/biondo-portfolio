@@ -41,7 +41,7 @@ p {
 .slidingDownDiv {
     animation: slideDown 0.3s ease-out forwards;
     position: relative;
-    top: -200px; /* This should be adjusted depending on the element's initial position */
+    top: -200px;
 }
 
 @keyframes slideDown {
