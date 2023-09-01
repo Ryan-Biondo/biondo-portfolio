@@ -18,14 +18,15 @@ const Projects = () => {
 
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
-              <strong>The AstroPix Gallery</strong> showcases space images
-              sourced from NASA's Astronomy Picture of the Day (APOD), built
-              using React, Chakra UI, and React Router. The calendar is imported
+              <strong>The AstroPix Gallery</strong> showcases images sourced
+              from NASA's Astronomy Picture of the Day, built using React,
+              Chakra UI, React Query and React Router. The calendar is imported
               from date-picker and synchronizes the date with the chosen
               picture. Utilized Chakra UI components for styling and
               responsiveness, and generic custom hooks for modular structure.
-              The integration of real-time API data and interactive features
-              provides users with a platform to enjoy and learn about astronomy.
+              The integration of infinite scrolling and other navigation
+              features provide users with a platform to enjoy and learn about
+              astronomy.
             </p>
             <div className={styles.projectLinks}>
               <a
@@ -53,12 +54,12 @@ const Projects = () => {
 
           <div className={styles.projectText}>
             <p className={styles.projectDescript}>
-              <strong>The Code Quiz</strong> client is a dynamic web application
-              designed to connect with the Code Quiz server and retrieve a
-              random assortment of questions from a diverse pool of quizzes.
-              This project was built using React and TypeScript. It provides an
-              interactive platform for developers to test their knowledge across
-              a multitude of categories.
+              <strong>The Code Quiz</strong> is a tool for developers, that
+              connects with the server to retrieve a random assortment of
+              questions from a pool of quizzes. This project was built using
+              React and TypeScript. It provides an interactive platform for
+              developers to test their knowledge across a multitude of
+              categories.
             </p>
             <div className={styles.projectLinks}>
               <a
