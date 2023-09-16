@@ -23,10 +23,11 @@ const Projects = () => {
               Chakra UI, React Query and React Router. The calendar is imported
               from date-picker and synchronizes the date with the chosen
               picture. Utilized Chakra UI components for styling and
-              responsiveness, and generic custom hooks for modular structure.
-              The integration of infinite scrolling and other navigation
-              features provide users with a platform to enjoy and learn about
-              astronomy.
+              responsiveness, and generic custom hooks for modular structure. We
+              protect the API key, apply throttling, and add security headings
+              using a Node.js server built with Express. The integration of
+              infinite scrolling and other navigation features provide users
+              with a platform to enjoy and learn about astronomy.
             </p>
             <div className={styles.projectLinks}>
               <a
