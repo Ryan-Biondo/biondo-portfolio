@@ -4,7 +4,8 @@
     background-position: center 80px;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-bottom: 250px;
+    padding-bottom: 290px;
+    padding-top: 100px;
 }
 .contactFormBox {
     width: 60%;
@@ -22,6 +23,7 @@
     height: 100%;
     padding: 1em 0;
 }
+
 label {
     display: block;
     margin-bottom: 1em;
